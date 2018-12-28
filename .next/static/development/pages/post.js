@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/post.js"],{
 
 /***/ "./components/Header.js":
 /*!******************************!*\
@@ -10052,10 +10052,10 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/post.js":
+/*!***********************!*\
+  !*** ./pages/post.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10066,155 +10066,106 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/MyLayout.js */ "./components/MyLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "/Users/matthew.pilcher/Practise/next-prac1/pages/index.js";
+var _jsxFileName = "/Users/matthew.pilcher/Practise/next-prac1/pages/post.js";
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-// import React, { Component } from 'react'
-// import Link from 'next/link'
-//
-// import Layout from '../components/MyLayout'
-// // In the <Link> element, we have used another prop called “as”. That's the URL which we need to show on the browser. The URL your app sees is mentioned in the “href” prop.
-//
-//
-// class Index extends Component {
-//
-//   getInitialProps = async function() {
-//     const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
-//     const data = await res.json()
-//
-//     console.log(`Show data fetched. Count: ${data.length}`)
-//
-//     return {
-//       shows: data
-//     }
-//   }
-//
-//   render () {
-//     console.log(this.props)
-//     // const PostLink = (props) => (
-//     //   <li>
-//     //     <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
-//     //       <a>{props.title}</a>
-//     //     </Link>
-//     //   </li>
-//     // )
-//
-//     return (
-//       <Layout>
-//         <h1>Home Page</h1>
-//         <hr />
-//         {/* <ul>
-//           {this.props.shows.map(({show}) => (
-//             <li key={show.id}>
-//               <Link as={`/p/${show.id}`} href={`/post?id=${show.id}`}>
-//                 <a>{show.name}</a>
-//               </Link>
-//             </li>
-//           ))}
-//         </ul> */}
-//         {/* <ul>
-//           <PostLink id='post-one' title="Post One"/>
-//           <PostLink id='post-two' title="Post Two"/>
-//           <PostLink id='post-three' title="Post Three"/>
-//         </ul> */}
-//       </Layout>
-//     )
-//   }
-// }
-// 
-// export default Index
 
 
 
-
-var Index = function Index(props) {
+var Post = function Post(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 5
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 6
     },
     __self: this
-  }, "Batman TV Shows"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+  }, props.show.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 7
     },
     __self: this
-  }, props.shows.map(function (_ref) {
-    var show = _ref.show;
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-      key: show.id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 65
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      as: "/p/".concat(show.id),
-      href: "/post?id=".concat(show.id),
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 66
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 67
-      },
-      __self: this
-    }, show.name)));
-  })));
+  }, props.show.summary.replace(/<[/]?p>/g, '')), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: props.show.image.medium,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }));
 };
 
-Index.getInitialProps =
+Post.getInitialProps =
 /*#__PURE__*/
-_asyncToGenerator(
-/*#__PURE__*/
-_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-  var res, data;
-  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _context.next = 2;
-          return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('https://api.tvmaze.com/search/shows?q=batman');
+function () {
+  var _ref = _asyncToGenerator(
+  /*#__PURE__*/
+  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(context) {
+    var id, res, show;
+    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            id = context.query.id;
+            _context.next = 3;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://api.tvmaze.com/shows/".concat(id));
 
-        case 2:
-          res = _context.sent;
-          _context.next = 5;
-          return res.json();
+          case 3:
+            res = _context.sent;
+            _context.next = 6;
+            return res.json();
 
-        case 5:
-          data = _context.sent;
-          console.log("Show data fetched. Count: ".concat(data.length));
-          return _context.abrupt("return", {
-            shows: data
-          });
+          case 6:
+            show = _context.sent;
+            console.log("Fetched show: ".concat(show.name));
+            return _context.abrupt("return", {
+              show: show
+            });
 
-        case 8:
-        case "end":
-          return _context.stop();
+          case 9:
+          case "end":
+            return _context.stop();
+        }
       }
-    }
-  }, _callee, this);
-}));
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+    }, _callee, this);
+  }));
+
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Post); // import React, { Component } from 'react'
+// import { withRouter } from 'next/router'
+//
+// import Layout from '../components/MyLayout.js'
+//
+// class Post extends Component {
+//   render() {
+//     return (
+//       <Layout>
+//         <h1>{this.props.router.query.title}</h1>
+//         <hr />
+//         <p>This is the blog post content.</p>
+//       </Layout>
+//     )
+//   }
+// }
+//
+// export default withRouter(Post)
     (function (Component, route) {
       if(!Component) return
       if (false) {}
@@ -10231,21 +10182,21 @@ _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function 
           next.router.update(r, Component)
         }
       }
-    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/")
+    })(typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__.default : (module.exports.default || module.exports), "/post")
   
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ "./node_modules/webpack/buildin/harmony-module.js")(module)))
 
 /***/ }),
 
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 4:
+/*!*****************************!*\
+  !*** multi ./pages/post.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__NEXT_REGISTER_PAGE('/', function() {
-module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
+__NEXT_REGISTER_PAGE('/post', function() {
+module.exports = __webpack_require__(/*! ./pages/post.js */"./pages/post.js");
 
 return { page: module.exports.default }});
 
@@ -10262,5 +10213,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
-//# sourceMappingURL=index.js.map
+},[[4,"static/runtime/webpack.js"]]]));;
+//# sourceMappingURL=post.js.map

@@ -1,0 +1,67 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "external \"react\"": 0,
+      "external \"next/link\"": 1,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!components/MyLayout.js aa32c4a455c3d63624a9edd7ef68626c": 2,
+      "external \"@babel/runtime/regenerator\"": 3,
+      "external \"isomorphic-unfetch\"": 4,
+      "multi ./pages/about.js": 5,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/about.js": 6,
+      "multi ./pages/index.js": 7,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/index.js": 8,
+      "multi ./pages/post.js": 9,
+      "node_modules/next/dist/build/webpack/loaders/next-babel-loader.js??ref--4!pages/post.js": 10,
+      "multi node_modules/next/dist/pages/_app.js": 11,
+      "node_modules/next/dist/pages/_app.js": 12,
+      "external \"next/app\"": 13,
+      "multi node_modules/next/dist/pages/_error.js": 14,
+      "node_modules/next/dist/pages/_error.js": 15,
+      "external \"next/error\"": 16,
+      "multi node_modules/next/dist/pages/_document.js": 17,
+      "node_modules/next/dist/pages/_document.js": 18,
+      "external \"next/document\"": 19
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/p1t8KrBOpTzBUXJUftAs1/pages/about.js": 0,
+      "static/p1t8KrBOpTzBUXJUftAs1/pages/index.js": 1,
+      "static/p1t8KrBOpTzBUXJUftAs1/pages/post.js": 2,
+      "static/p1t8KrBOpTzBUXJUftAs1/pages/_app.js": 3,
+      "static/p1t8KrBOpTzBUXJUftAs1/pages/_error.js": 4,
+      "static/p1t8KrBOpTzBUXJUftAs1/pages/_document.js": 5
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+}
