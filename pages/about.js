@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import Layout from '../components/MyLayout'
 
 class About extends Component {
