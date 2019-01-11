@@ -1,5 +1,5 @@
 ### Nextjs Tutorial
-Found at: https://nextjs.org/learn/
+Tutorial: https://nextjs.org/learn/
 
 
 Some good reading on nextjs
